@@ -1,0 +1,604 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #000000ce;
+  z-index: 10;
+}
+
+.nav-cont {
+  width: 100px;
+}
+
+.nav-cont h1 {
+  color: teal;
+  font-family: "Radio Canada", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 2px 2px 10px teal ;
+}
+.hamburger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: teal;
+  margin-right: 20px;
+}
+
+
+.nav-text {
+  display: flex;
+  align-self: center;
+}
+
+.nav-text button {
+  margin-left: 15px;
+  padding: 6px 12px;
+  background: transparent;
+  border: 1px solid teal;
+  color: teal;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.nav-text button:hover {
+  background: teal;
+  color: white;
+}
+
+.home-pg {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url(./assets/image/new.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: filter 0.2s ease-out;
+
+}
+
+.typing-box {
+  text-align: right;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.typing {
+  text-align: justify;
+  position: absolute;
+  right: 50px;
+  top: 180px
+}
+
+.typing2 {
+  color: black;
+  font-size: 1rem;
+  font-family: monospace;
+  border-right: 3px solid black;
+  overflow: hidden;
+  animation: typing 4s steps(30, end) forwards, blink 0.7s infinite;
+  position: absolute;
+  right: 150px;
+  top: 250px
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  0% {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: black;
+  }
+
+  100% {
+    border-color: transparent;
+  }
+}
+
+.about-pg {
+  background-color: #000;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.about-h1 {
+  display: block;
+  color: white;
+  font-family: "Radio Canada", sans-serif;
+  text-align: center;
+  width: 100%;
+  align-content: center;
+}
+.about-h1:hover{
+ text-shadow: 1px 1px 10px white;
+}
+.about-img {
+  margin-top: 50px;
+  width: 300px;
+  height: 400px;
+}
+
+.about-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  filter: grayscale(100%);
+}
+
+.about-text {
+  margin-top: 50px;
+  width: 700px;
+}
+
+.about-text p {
+  color: #fff;
+  font-size: x-large;
+  font-weight: lighter;
+  font-family: "Radio Canada", sans-serif;
+  text-align:justify;
+  align-items: center;
+  padding: 10px;
+}
+
+.skill-pg {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.skill-pg h1 {
+  align-self: center;
+}
+.skill-pg h1:hover{
+  text-shadow: 2px 2px 10px black;
+}
+
+.skill-cont {
+  width: 100%;
+  padding: 20px;
+}
+
+.use {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-family: "Radio Canada", sans-serif;
+  justify-content: space-around;
+  box-shadow: 10px 10px 5px lightblue;
+  padding: 20px;
+    overflow: hidden;
+}
+
+.HTML {
+  width: 50px;
+  height: 50px;
+}
+
+.HTML img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.CSS {
+  width: 50px;
+  height: 50px;
+}
+
+.CSS img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.js {
+  width: 50px;
+  height: 50px;
+}
+
+.js img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.React {
+  width: 50px;
+  height: 50px;
+}
+
+.React img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.mongodb {
+  width: 50px;
+  height: 50px;
+}
+
+.mongodb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Lerning {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-family: "Radio Canada", sans-serif;
+  justify-content: space-around;
+  box-shadow: 10px 10px 5px lightblue;
+  padding: 20px;
+   margin-top: 50px;
+   overflow: hidden;
+}
+
+.node {
+  width: 50px;
+  height: 50px;
+}
+
+.node img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ex {
+  width: 50px;
+  height: 50px;
+}
+
+.ex img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.linus {
+  width: 50px;
+  height: 50px;
+}
+
+.linus img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tailwind {
+  width: 50px;
+  height: 50px;
+}
+
+.tailwind img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.Familiar {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  font-family: "Radio Canada", sans-serif;
+  justify-content: space-around;
+  box-shadow: 10px 10px 5px lightblue;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.git {
+  width: 50px;
+  height: 50px;
+}
+
+.git img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.github {
+  width: 50px;
+  height: 50px;
+}
+
+.github img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bootstrap {
+  width: 50px;
+  height: 50px;
+}
+
+.bootstrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.chatgpt {
+  width: 50px;
+  height: 50px;
+}
+
+.chatgpt img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.skill-pg h1 {
+  display: block;
+  color: black;
+  font-family: "Radio Canada", sans-serif;
+  padding: 5px;
+  text-align: center;
+  width: 100%;
+}
+
+.projects-pg {
+  background-color: #000;
+  padding: 50px;
+  overflow: hidden;
+}
+
+.pj-head h1 {
+  color: #fff;
+  text-align: center;
+  font-family: "Radio Canada", sans-serif;
+  padding: 20px;
+}
+.pj-head h1:hover{
+  text-shadow: 2px 2px 10px white;
+}
+
+.pj-grid {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.pj-grid div {
+  width: 290px;
+  height: 150px;
+  border: 1px solid white;
+  border: none;
+
+}
+
+.pj-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.4s ease-in-out;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pj-1:hover img {
+  transform: scale(1.08);
+}
+
+.pj-2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.4s ease-in-out;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pj-2:hover img {
+  transform: scale(1.08);
+}
+
+.pj-3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.4s ease-in-out;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pj-3:hover img {
+  transform: scale(1.08);
+}
+
+.pj-4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.4s ease-in-out;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pj-4:hover img {
+  transform: scale(1.08);
+}
+
+.pj-5 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.4s ease-in-out;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.pj-5:hover img {
+  transform: scale(1.08);
+}
+
+.contact-pg {
+  height: 40vh;
+  align-content: center;
+}
+
+.contact-pg h1{
+  display: block;
+  text-align: center;
+  font-family: "Radio Canada", sans-serif;
+  text-shadow: 2px 2px 10px black;
+  padding: 20px;
+}
+
+.contact-cont{
+  display:flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.contact-left{
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  gap:50px;
+  align-items: center;
+  font-size: xx-large;
+  color: teal;
+}
+
+.contact-left i:hover{
+  box-sizing: 100%;
+  box-shadow: 1px 1px 10px teal;
+}
+
+.contact-right{
+ width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  gap:50px;
+  align-items: center;
+  font-family: "Radio Canada", sans-serif;
+  text-align: center;
+}
+
+.download-btn{
+  width: 100px;
+  height: 50px;
+  border: none;
+  background-color: teal;
+  color:white;
+  border-radius: 10px;
+}
+.download-btn:hover{
+  color: teal;
+  background-color: white;
+  border: 1px solid teal;
+  box-shadow: 1px 1px 10px teal;
+}
+.mail-btn{
+  width: 100px;
+  height: 50px;
+  border: none;
+  background-color: teal;
+  color:white;
+  border-radius: 10px;
+}
+.mail-btn:hover{
+  color: teal;
+  background-color: white;
+  border: 1px solid teal;
+  box-shadow: 1px 1px 10px teal;    
+}
+@media (max-width: 780px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-text {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background: #000000ce;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .nav-text.open {
+    display: flex;
+  }
+
+  .nav-text button {
+    margin: 10px 0;
+    width: 120px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 479px) {
+  .typing{
+   font-size:x-large;
+   position: absolute;
+   left:0px;
+   overflow: hidden;
+  }
+  .typing2{
+      display: flex;
+      flex-wrap: wrap;
+      position: absolute;
+      right:0px;
+      top:210px
+  }
+.home-pg {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url(./assets/image/new.jpg);
+  background-repeat: no-repeat;
+  background-size: fill;
+  background-position: 40%;
+  transition: filter 0.2s ease-out;
+
+}
+
+
+}
